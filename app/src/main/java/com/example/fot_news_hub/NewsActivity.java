@@ -30,12 +30,12 @@ public class NewsActivity extends AppCompatActivity {
         welcomeText.setText("Hi, " + username);
 
         userIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, UserInfoActivity.class);
             startActivity(intent);
         });
 
         infoIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(this, UserInfoActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
 

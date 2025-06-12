@@ -3,22 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="20dp">
 
     <EditText
-        android:id="@+id/etEditName"
+        android:id="@+id/etEditUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textSize="16sp"/>
+        android:hint="Enter new username"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/etEditEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Email"
+        android:hint="Enter new email"
         android:inputType="textEmailAddress"
-        android:textSize="16sp"/>
+        android:layout_marginTop="12dp" />
+
 </LinearLayout>
