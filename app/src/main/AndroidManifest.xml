@@ -30,6 +30,12 @@
         <activity
             android:name=".NewsActivity"
             android:exported="false" />
+<<<<<<< Updated upstream
+=======
+
+        <activity android:name=".UserInfoActivity" />
+
+>>>>>>> Stashed changes
     </application>
 
 </manifest>
