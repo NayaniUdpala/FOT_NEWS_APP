@@ -4,7 +4,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -42,11 +41,7 @@ public class UserInfoActivity extends AppCompatActivity {
 
         btnEditInfo.setOnClickListener(v -> showEditDialog());
 
-        btnSignOut.setOnClickListener(v -> {
-            Toast.makeText(this, "Signed out", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(UserInfoActivity.this, LoginActivity.class));
-            finish();
-        });
+        btnSignOut.setOnClickListener(v -> showSignOutDialog());
     }
 
     private void loadUserInfo() {
@@ -86,6 +81,19 @@ public class UserInfoActivity extends AppCompatActivity {
                     }
                 })
                 .setNegativeButton("Cancel", null)
+                .show();
+    }
+
+    private void showSignOutDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Confirm Sign Out")
+                .setMessage("Are you sure you want to sign out?")
+                .setPositiveButton("Confirm", (dialog, which) -> {
+                    Toast.makeText(this, "Signed out", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(UserInfoActivity.this, LoginActivity.class));
+                    finish();
+                })
+                .setNegativeButton("Dismiss", (dialog, which) -> dialog.dismiss())
                 .show();
     }
 }
