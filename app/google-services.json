@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "754185418089",
+    "firebase_url": "https://fot-hub-default-rtdb.firebaseio.com",
+    "project_id": "fot-hub",
+    "storage_bucket": "fot-hub.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754185418089:android:53080d013fc7d42a7879f8",
+        "android_client_info": {
+          "package_name": "com.example.fot_news_hub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWo7Q2tJfOwSZT22xVsIUliw9Zxek8Dy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

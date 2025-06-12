@@ -35,7 +35,7 @@ public class NewsActivity extends AppCompatActivity {
         });
 
         infoIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, DeveloperInfoActivity.class);
             startActivity(intent);
         });
 
