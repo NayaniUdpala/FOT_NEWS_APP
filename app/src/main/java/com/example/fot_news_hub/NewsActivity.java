@@ -35,7 +35,11 @@ public class NewsActivity extends AppCompatActivity {
         });
 
         infoIcon.setOnClickListener(v -> {
+<<<<<<< Updated upstream
             Intent intent = new Intent(this, MainActivity.class);
+=======
+            Intent intent = new Intent(this, UserInfoActivity.class);
+>>>>>>> Stashed changes
             startActivity(intent);
         });
 
