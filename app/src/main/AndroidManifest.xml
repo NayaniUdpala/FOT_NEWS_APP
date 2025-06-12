@@ -30,12 +30,11 @@
         <activity
             android:name=".NewsActivity"
             android:exported="false" />
-<<<<<<< Updated upstream
-=======
 
         <activity android:name=".UserInfoActivity" />
 
->>>>>>> Stashed changes
+        <activity android:name=".ClickedNewsActivity" />
+
     </application>
 
 </manifest>
