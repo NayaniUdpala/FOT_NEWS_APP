@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FOT_NEWS_HUB">
 
+        <activity android:name=".ClickedNewsActivity" />
+        <activity android:name=".UserInfoActivity" />
+        <activity android:name=".NewsActivity" android:exported="false" />
+        <activity android:name=".SignupActivity" android:exported="false" />
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".DeveloperInfoActivity" android:exported="false"/>
+
         <activity
             android:name=".SplashscreenActivity"
             android:exported="true">
@@ -18,11 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Next screen -->
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
 
     </application>
 

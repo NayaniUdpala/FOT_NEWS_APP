@@ -35,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
             String confirmPassword = etConfirmPassword.getText().toString().trim();
             String email = etEmail.getText().toString().trim();
 
-            // Validation for all fields except "no special rules" for username
+
             if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password) ||
                     TextUtils.isEmpty(confirmPassword) || TextUtils.isEmpty(email)) {
                 Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
@@ -56,10 +56,12 @@ public class SignupActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Sign-up successful!", Toast.LENGTH_SHORT).show();
 
+
             Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
         });
+
 
         tvLogin.setOnClickListener(view -> {
             Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
